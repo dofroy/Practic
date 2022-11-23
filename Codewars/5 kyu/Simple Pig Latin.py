@@ -1,11 +1,5 @@
 def pig_it(text):
-    text1 = []
-    for i in text.split():
-        if i not in "!,.::?" :
-            text1.append(i[1:] + i[0] + "ay")
-        else:
-            text1.append(i)
-
+    text1 = [i[1::] + i[0] + "ay" if i not in "!?.,-+:;" else i for i in text.split()]
     return " ".join(text1)
 
 
