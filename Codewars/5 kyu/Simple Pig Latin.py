@@ -3,4 +3,3 @@ def pig_it(text):
     return " ".join(text1)
 
 
-print(pig_it('Hello world !'))
